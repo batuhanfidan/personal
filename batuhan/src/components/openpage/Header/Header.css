@@ -1,0 +1,81 @@
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 73px;
+    height: 32px;
+  }
+  
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+ 
+  .slider {
+    --background: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 22%;
+    box-shadow: inset 7px 0px 0px 0px #ffe86e;
+    background: var(--background);
+    transition: .5s;
+  }
+  
+  input:checked + .slider {
+    background-color: #e92577;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(225%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+  }
+  
+  .mainHeader p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #777777;
+  }
+  
+  /* .mainHeader{
+    width: 1476px;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+  } */
+
+
+  /* .headerButton {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  } */
+
+  /* .mainHeader button {
+    font-family: "Inter";
+    border: none;
+    background-color: white;
+    color: #E92577;
+    font-size: 20px;
+    font-weight: bold;
+  } */
