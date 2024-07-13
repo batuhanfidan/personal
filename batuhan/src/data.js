@@ -6,12 +6,28 @@ export const data = {
     },
     skills: [
       {
-        skill: "HTML5",
-        img: "https://example.com/html5.png",
+        skill: "JAVASCRIPT",
+        img: "https://cs6.pikabu.ru/avatars/355/x355692-1871485221.png",
       },
       {
-        skill: "CSS3",
-        img: "https://example.com/css3.png",
+        skill: "REACT",
+        img: "https://avatars.mds.yandex.net/i?id=09c802243e9e5975a17d02095735c81ea8e7aa1c65542c04-12323508-images-thumbs&n=13",
+      },
+      {
+        skill: "REDUX",
+        img: "https://avatars.mds.yandex.net/i?id=8094c21acc4d7e588d2d9315bf69dbeabb154f28-12890014-images-thumbs&n=13",
+      },
+      {
+        skill: "NODE",
+        img: "https://avatars.mds.yandex.net/i?id=ebbcc55476f77da1d3fc6d332c88fe1cefca832b-12661238-images-thumbs&n=13",
+      },
+      {
+        skill: "VS CODE",
+        img: "https://yandex-images.clstorage.net/ZSYz50234/3c361eZ-/E2I4cpO7fUq4w_3YD6v9X9zb9c_VvSf_6MPhbBQYAfq-QPGyBEZj-gNPl_6J1riuYR1GDLjQ_IQEJ_3R9yOCqtMmXQOXfwkbPSapearrfW-M-iAb5KziX60SRUkk-FFZeNf20BKU9YihXVCfSdMd-2WZ43lIYQjgckQ5wkSiEbtzI2vhk2hPLUgCzWyNSd4_r5jxzAT-UB9dgHPqYhxlaOsW1KDxFuaZE6xAD4tirhhlXzEYmmS4sfLVb9OEYIJaAGGawPLobO0ZcNxefGqOv95q024HrJJdL9BSKYGv5ukqBHYy89dUGuFMgLxL45zYNkwj2ujnuUOitP2DNYLialHgCfLC-hzee2HPbq0pDT1-mQG9F25BnfxicYuQPwdKaYSV8kD2lElB7QD-ObDM-qbPsntbFSgxMqe9EwWCgrozkdtigzsd_qtxHj3vqO0sj9hgPyac4_xOc_EZY1x0uuu39-MQxwZZEjyxDMiDLpoEXYGZ-dd7sxHXDPNlUBIIoDA6I-O4rl34k4w9z0k_TJ5qA8yVrhKeLwOwC0AuVfgZ9_QCUea2yiJ_od4Zow4qB73zCBqUewPBRk6Bd-Ahm9HS2ePyysxu-pPtTL0bzX1sWQGOVrzx3G_i0zrTTkcrqmdGQzFUZSlwTWCPmQJ9OaW_4gj5t4tDsWafARZTEmjQUtjTo7hPD_ggPez9m92cHMrCX7d9A38PcUA5oX7HKFk09iLDliSZo--jbGpT3iilfxMZ6_RIA8HUj1DkM0AbslMbQKD7LozKgP9s3ymenBzqYZ_XHrMd70AyayFOdiqaZ3TzQQekilB-UE64o-9pZN3DeUqGqDAQ9o9Dl6LCW4ERa8Nheg5tySMvz4xY_O2sehNsp49Dnu8jgmvRznXIa3V34RN0dnkwboCvuvC--8VeQtnKJUqAEpZckbSwoLiBU9nhA0i-_1pgjY2-mKyeD-ozXJZ-Q49vQeGr0R91Q",
+      },
+      {
+        skill: "FIGMA",
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1200%2F1*DG5eBssbHsAyh_RtTRz8mQ%402x.png&f=1&nofb=1&ipt=41fe1033e5530d938050f3668c7a63e96308fc093065ae7fc1bcaed2bba54011&ipo=images",
       },
     ],
     profile: {
@@ -57,12 +73,28 @@ export const data = {
     },
     skills: [
       {
-        skill: "HTML5",
-        img: "https://example.com/html5.png",
+        skill: "JAVASCRIPT",
+        img: "https://cs6.pikabu.ru/avatars/355/x355692-1871485221.png",
       },
       {
-        skill: "CSS3",
-        img: "https://example.com/css3.png",
+        skill: "REACT",
+        img: "https://avatars.mds.yandex.net/i?id=09c802243e9e5975a17d02095735c81ea8e7aa1c65542c04-12323508-images-thumbs&n=13",
+      },
+      {
+        skill: "REDUX",
+        img: "https://avatars.mds.yandex.net/i?id=8094c21acc4d7e588d2d9315bf69dbeabb154f28-12890014-images-thumbs&n=13",
+      },
+      {
+        skill: "NODE",
+        img: "https://avatars.mds.yandex.net/i?id=ebbcc55476f77da1d3fc6d332c88fe1cefca832b-12661238-images-thumbs&n=13",
+      },
+      {
+        skill: "VS CODE",
+        img: "https://yandex-images.clstorage.net/ZSYz50234/3c361eZ-/E2I4cpO7fUq4w_3YD6v9X9zb9c_VvSf_6MPhbBQYAfq-QPGyBEZj-gNPl_6J1riuYR1GDLjQ_IQEJ_3R9yOCqtMmXQOXfwkbPSapearrfW-M-iAb5KziX60SRUkk-FFZeNf20BKU9YihXVCfSdMd-2WZ43lIYQjgckQ5wkSiEbtzI2vhk2hPLUgCzWyNSd4_r5jxzAT-UB9dgHPqYhxlaOsW1KDxFuaZE6xAD4tirhhlXzEYmmS4sfLVb9OEYIJaAGGawPLobO0ZcNxefGqOv95q024HrJJdL9BSKYGv5ukqBHYy89dUGuFMgLxL45zYNkwj2ujnuUOitP2DNYLialHgCfLC-hzee2HPbq0pDT1-mQG9F25BnfxicYuQPwdKaYSV8kD2lElB7QD-ObDM-qbPsntbFSgxMqe9EwWCgrozkdtigzsd_qtxHj3vqO0sj9hgPyac4_xOc_EZY1x0uuu39-MQxwZZEjyxDMiDLpoEXYGZ-dd7sxHXDPNlUBIIoDA6I-O4rl34k4w9z0k_TJ5qA8yVrhKeLwOwC0AuVfgZ9_QCUea2yiJ_od4Zow4qB73zCBqUewPBRk6Bd-Ahm9HS2ePyysxu-pPtTL0bzX1sWQGOVrzx3G_i0zrTTkcrqmdGQzFUZSlwTWCPmQJ9OaW_4gj5t4tDsWafARZTEmjQUtjTo7hPD_ggPez9m92cHMrCX7d9A38PcUA5oX7HKFk09iLDliSZo--jbGpT3iilfxMZ6_RIA8HUj1DkM0AbslMbQKD7LozKgP9s3ymenBzqYZ_XHrMd70AyayFOdiqaZ3TzQQekilB-UE64o-9pZN3DeUqGqDAQ9o9Dl6LCW4ERa8Nheg5tySMvz4xY_O2sehNsp49Dnu8jgmvRznXIa3V34RN0dnkwboCvuvC--8VeQtnKJUqAEpZckbSwoLiBU9nhA0i-_1pgjY2-mKyeD-ozXJZ-Q49vQeGr0R91Q",
+      },
+      {
+        skill: "FIGMA",
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1200%2F1*DG5eBssbHsAyh_RtTRz8mQ%402x.png&f=1&nofb=1&ipt=41fe1033e5530d938050f3668c7a63e96308fc093065ae7fc1bcaed2bba54011&ipo=images",
       },
     ],
     profile: {
