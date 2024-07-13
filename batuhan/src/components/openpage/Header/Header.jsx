@@ -35,7 +35,15 @@ export default function Header() {
           />
           <span className="slider"></span>
         </label>
-        <p>{darkMode ? "DARK " : "LIGHT "}MODE</p>
+        <p>
+          {language === "english"
+            ? darkMode
+              ? "DARK MODE "
+              : "LIGHT MODE "
+            : darkMode
+            ? "KARANLIK MOD"
+            : "AYDINLIK MOD"}
+        </p>
       </div>
       <p>I</p>
       <div>

@@ -20,7 +20,7 @@ export default function OpenPage() {
         <div className="flex flex-col justify-between">
           <div className="w-[905px] h-[418px] flex flex-col gap-7">
             <p className="text-[40px] w-[118px] h-[48px]">Hi! 👋🏼</p>
-            <p className="text-[56px] w-[888px] h-[342px] font-medium">
+            <p className="text-[56px] w-[888px] h-[342px] font-medium z-[2]">
               {data.about.paragraph}
             </p>
           </div>
@@ -60,7 +60,9 @@ export default function OpenPage() {
           className="information-image w-[450px] h-[450px] rounded-3xl  z-[2] mt-[55px]"
         />
       </div>
+      <div className="w-[200px] h-[42px] bg-[#E92577] rounded-md absolute z-[1] top-[350px] left-[170px]"></div>
       <div className="w-[450px] h-[450px] bg-[#E92577] rounded-3xl absolute ml-[970px] -mt-[40px] z-[1]"></div>
+      <div className="w-[140px] h-[140px] rounded-full bg-[#d9d9d900] border-[21px] absolute  right-[350px] top-[915px]"></div>
     </div>
   );
 }
