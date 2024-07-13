@@ -34,11 +34,14 @@ export const data = {
       basicInformation: {
         born: "07.07.1998",
         city: "Bursa",
-        education: "Bursa Uludag University, Economics, 2021",
+        education: "Bursa Uludag University, Economics Undergraduate, 2021",
         position: "Frontend Devoloper",
       },
       aboutMe: {
-        aboutme: "",
+        aboutme:
+          "My name is Batuhan Fidan. I graduated from Bursa Uludag University Economics in 2021.",
+        aboutme2:
+          "Currently, I'm taking a full-stack developer course and already finished the frontend developer part. I can craft solid and scalable frontend products. I hope we can meet!!",
       },
     },
     projects: [
@@ -98,11 +101,18 @@ export const data = {
       },
     ],
     profile: {
-      born: "",
-      city: "",
-      education: "",
-      position: "",
-      aboutme: "",
+      basicInformation: {
+        born: "07.07.1998",
+        city: "Bursa",
+        education: "Bursa Uludağ Üniversitesi, İktisat Lisans, 2021",
+        position: "Frontend Devoloper",
+      },
+      aboutMe: {
+        aboutme:
+          "Ben Batuhan Fidan, 2021 yılında Bursa Uludağ Üniversitesi İktisat bölümünden mezun oldum",
+        aboutme2:
+          "Şu anda full-stack developer eğitimi almaktayım ve frontend kısmını bitirmiş bulunmaktayım. Sağlam ve ölçeklenebilir front end ürünleri geliştirebilirim. Umarım tanışabiliriz!!",
+      },
     },
     projects: [
       {

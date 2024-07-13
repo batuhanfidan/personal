@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export default function Skills() {
   const data = useSelector((state) => state.data);
   const skills = useSelector((state) => state.data.skills);
-  const language = useSelector((state) => state.language);
+  const { language, darkMode } = useSelector((state) => state);
 
   return (
     <div className="h-[656px] w-[100%] flex flex-col items-center justify-center font-Inter gap-[80px]">

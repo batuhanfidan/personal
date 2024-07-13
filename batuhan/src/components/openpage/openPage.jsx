@@ -7,8 +7,7 @@ import { IoLogoGithub } from "react-icons/io";
 
 export default function OpenPage() {
   const data = useSelector((state) => state.data);
-  const darkMode = useSelector((state) => state.darkMode);
-  const language = useSelector((state) => state.language);
+  const { language, darkMode } = useSelector((state) => state);
 
   return (
     <div
