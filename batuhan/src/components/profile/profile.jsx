@@ -51,7 +51,12 @@ export default function Profile() {
             <div>{aboutMe.aboutme2}</div>
           </div>
         </div>
+        <img
+          src="./src/assets/eclipse.png"
+          className="absolute right-[0] mb-[800px]"
+        />
       </div>
+
       {/* <div className="w-[677.23px] h-[429px] rounded-[16px] bg-[#52525279] absolute z-[1] left-[260px] mt-[125px]"></div> */}
     </div>
   );

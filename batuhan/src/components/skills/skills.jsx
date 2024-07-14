@@ -26,7 +26,6 @@ export default function Skills() {
             </div>
           </>
         ))}
-        <div className="absolute w-[150px] h-[65px] bg-[#525252] rounded-r-full left-[0] mt-[250px]"></div>
       </div>
     </div>
   );

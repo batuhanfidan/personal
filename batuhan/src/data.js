@@ -46,18 +46,34 @@ export const data = {
     },
     projects: [
       {
-        name: "Project Name",
-        about: "English description about the project.",
+        name: "Pizza project",
+        about:
+          "This project is a web application where users can place pizza orders. The project aims to simplify and expedite the pizza ordering process by offering a user-friendly interface and a variety of features.",
         used: {
-          framework1: "",
-          framework2: "",
-          framework3: "",
-          framework4: "",
-          framework5: "",
-          framework6: "",
+          framework1: "react",
+          framework2: "reactsrap",
+          framework3: "router",
+          framework4: "axios",
+          framework5: "cypress",
         },
-        link: "https://example.com/project",
-        picture: "https://example.com/project.jpg",
+        link: "https://github.com/batuhanfidan/Pizza-challange",
+        pc: "./src/assets/rectangle.png",
+        picture: "https://i.hizliresim.com/nijcx93.png",
+        background: "#DDEEFE",
+      },
+      {
+        name: "Batuflix",
+        about:
+          "During the course, a Netflix clone was created to reinforce participants' front-end knowledge. This project aimed to teach front-end skills such as user interface design, data management, and API integration.",
+        used: {
+          framework1: "react",
+          framework2: "reactsrap",
+          framework3: "router",
+        },
+        link: "https://github.com/batuhanfidan/batuflixv2",
+        pc: "https://i.hizliresim.com/o6d6j3t.png",
+        picture: "https://i.hizliresim.com/71qnlf1.png",
+        background: "#D9F6F1",
       },
     ],
     footer: {
@@ -116,18 +132,34 @@ export const data = {
     },
     projects: [
       {
-        name: "Proje Adı",
-        about: "Proje hakkında Türkçe açıklama.",
+        name: "Pizza projesi",
+        about:
+          "Bu proje, kullanıcıların pizza siparişi verebileceği bir web uygulamasıdır. Proje, kullanıcı dostu bir arayüz ve çeşitli özellikler sunarak pizza sipariş sürecini kolay ve hızlı hale getirmeyi amaçlamaktadır.",
         used: {
-          framework1: "",
-          framework2: "",
-          framework3: "",
-          framework4: "",
-          framework5: "",
-          framework6: "",
+          framework1: "react",
+          framework2: "reactsrap",
+          framework3: "router",
+          framework4: "axios",
+          framework5: "cypress",
         },
-        link: "https://example.com/project",
-        picture: "https://example.com/project.jpg",
+        link: "https://github.com/batuhanfidan/Pizza-challange",
+        pc: "https://i.hizliresim.com/o6d6j3t.png",
+        picture: "https://i.hizliresim.com/nijcx93.png",
+        background: "#DDEEFE",
+      },
+      {
+        name: "Batuflix",
+        about:
+          "Kurs esnasında, katılımcıların front-end bilgilerini pekiştirmek için bir Netflix kopyası oluşturulmuştur. Bu proje, kullanıcı arayüzü tasarımı, veri yönetimi gibi front-end becerilerini öğretmeyi amaçlamıştır.",
+        used: {
+          framework1: "react",
+          framework2: "reactsrap",
+          framework3: "router",
+        },
+        link: "https://github.com/batuhanfidan/batuflixv2",
+        pc: "./src/assets/rectangle.png",
+        picture: "https://i.hizliresim.com/71qnlf1.png",
+        background: "#D9F6F1",
       },
     ],
     footer: {

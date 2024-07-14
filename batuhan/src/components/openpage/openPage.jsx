@@ -19,7 +19,7 @@ export default function OpenPage() {
       <div className="font-Inter w-[1476px] h-[658px] flex justify-between">
         <div className="flex flex-col justify-between">
           <div className="w-[905px] h-[418px] flex flex-col gap-7">
-            <p className="text-[40px] w-[118px] h-[48px]">
+            <p className="text-[40px] w-[250px] h-[48px]">
               {language === "english" ? "Hi! 👋🏼" : "Merhaba!👋🏼"}
             </p>
             <p className="text-[56px] w-[888px] h-[342px] font-medium z-[2]">
