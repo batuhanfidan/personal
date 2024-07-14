@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import "./Header.css";
 import {
+  getDatas,
   setEnglish,
   setTurkish,
   toggleDarkMode,
@@ -14,8 +15,10 @@ export default function Header() {
   const handleLanguageChange = (lang) => {
     if (lang === "turkish") {
       dispatch(setTurkish());
+      dispatch(getDatas());
     } else {
       dispatch(setEnglish());
+      dispatch(getDatas());
     }
   };
 
@@ -30,25 +33,25 @@ export default function Header() {
         <label className="switch">
           <input
             type="checkbox"
-            checked={darkMode}
+            checked={!darkMode}
             onChange={handleDarkModeToggle}
           />
           <span className="slider"></span>
         </label>
-        <p>
+        <p className="text-[#777777]">
           {language === "english"
             ? darkMode
-              ? "DARK MODE "
-              : "LIGHT MODE "
+              ? "LIGTH  MODE "
+              : "DARK MODE "
             : darkMode
-            ? "KARANLIK MOD"
-            : "AYDINLIK MOD"}
+            ? "AYDINLIK MOD"
+            : "KARANLIK MOD"}
         </p>
       </div>
-      <p>I</p>
+      <p className="text-[#777777]">I</p>
       <div>
         <button
-          className=" border-[none] bg-transparent"
+          className=" border-[none] bg-transparent text-[#777777]"
           onClick={() =>
             handleLanguageChange(language === "turkish" ? "english" : "turkish")
           }

@@ -42,7 +42,8 @@ export default function OpenPage() {
             <div>
               <p className="text-[24px]">
                 Currently <span className="text-[#AF0C48]">Freelancing </span>
-                for <span className="text-[#AF0C48]">UX, UI, & Web Design</span>
+                for{" "}
+                <span className="text-[#AF0C48]">UX, UI, & Web Design </span>
                 Project.
                 <br />
                 Invite me to join your team ->

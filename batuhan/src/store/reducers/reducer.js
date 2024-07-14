@@ -1,4 +1,9 @@
-import { ENGLISH, TURKISH, TOGGLE_DARK_MODE } from "../actions/action";
+import {
+  ENGLISH,
+  TURKISH,
+  TOGGLE_DARK_MODE,
+  GET_DATA,
+} from "../actions/action";
 import { data } from "../../data";
 
 const initialLanguage = localStorage.getItem("language") || "turkish";
@@ -8,6 +13,7 @@ const initialState = {
   language: initialLanguage,
   darkMode: initialDarkMode,
   data: initialLanguage === "turkish" ? data.turkish : data.english,
+  get_data: [],
 };
 
 export const reducer = (state = initialState, action) => {
@@ -18,6 +24,14 @@ export const reducer = (state = initialState, action) => {
       return { ...state, data: data.english, language: "english" };
     case TOGGLE_DARK_MODE:
       return { ...state, darkMode: !state.darkMode };
+    case GET_DATA:
+      return {
+        ...state,
+        get_data:
+          state.language === "english"
+            ? action.payload[0].english
+            : action.payload[0].turkish,
+      };
     default:
       return state;
   }

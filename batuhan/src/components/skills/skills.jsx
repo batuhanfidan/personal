@@ -2,7 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export default function Skills() {
+  const allData = useSelector((state) => state.get_data);
+  console.log(allData);
   const data = useSelector((state) => state.data);
+  console.log(data);
   const skills = useSelector((state) => state.data.skills);
   const { language, darkMode } = useSelector((state) => state);
 

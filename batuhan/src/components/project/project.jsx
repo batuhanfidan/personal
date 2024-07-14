@@ -2,7 +2,6 @@ import Frames from "./frame";
 
 export default function Project({ item }) {
   const library = Object.values(item.used);
-  console.log(library);
   const link = item.link;
 
   return (

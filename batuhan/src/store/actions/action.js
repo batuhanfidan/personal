@@ -1,6 +1,18 @@
+import axios from "axios";
+
 export const TURKISH = "TURKISH";
 export const ENGLISH = "ENGLISH";
 export const TOGGLE_DARK_MODE = "TOGGLE_DARK_MODE";
+export const GET_DATA = "GET_DATA";
+
+export const getDatas = () => (dispatch) => {
+  axios
+    .get("https://66911f0826c2a69f6e8e889c.mockapi.io/api/v1/data")
+    .then((res) => {
+      dispatch({ type: GET_DATA, payload: res.data });
+    })
+    .catch((err) => console.log(err));
+};
 
 export const setTurkish = () => {
   localStorage.setItem("language", "turkish");

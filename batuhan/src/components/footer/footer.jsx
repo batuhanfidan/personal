@@ -27,9 +27,17 @@ export default function Footer() {
           >
             Linkedin
           </a>
-          <a href="" className="text-[#AF0C48]">
-            Email
-          </a>
+
+          <section>
+            <div className="relative inline-block group transition-all">
+              <a href="#" className="text-[#AF0C48]">
+                Email
+              </a>
+              <span className="absolute left-full top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 duration-700 text-sm">
+                batuhanfidan07@hotmail.com
+              </span>
+            </div>
+          </section>
         </div>
       </div>
       <div className="absolute bg-[#82BBFF] w-[367px] h-[24px] mb-9 mr-[100px] rounded-md z-[-1]"></div>
