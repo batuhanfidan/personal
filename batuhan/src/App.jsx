@@ -15,16 +15,27 @@ const App = () => {
   }, [dispatch]);
 
   const allData = useSelector((state) => state.get_data);
-  console.log(allData);
+  const language = useSelector((state) => state.language);
+  const darkMode = useSelector((state) => state.darkMode);
+
+  const isLoading = allData.length === 0;
 
   return (
-    <>
-      <OpenPage />
-      <Skills />
-      <Profile />
-      <Projects />
-      <Footer />
-    </>
+    <div className={darkMode ? "dark" : ""}>
+      <div className="dark:text-white text-black">
+        {isLoading ? (
+          <div>Loading...</div>
+        ) : (
+          <>
+            <OpenPage allData={allData} />
+            <Skills allData={allData} />
+            <Profile allData={allData} />
+            <Projects allData={allData} />
+            <Footer allData={allData} />
+          </>
+        )}
+      </div>
+    </div>
   );
 };
 

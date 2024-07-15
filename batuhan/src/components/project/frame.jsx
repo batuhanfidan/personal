@@ -6,7 +6,7 @@ export default function Frames({ libraries }) {
           {library.map((item, itemIndex) => (
             <div
               key={itemIndex}
-              className="bg-[white] w-[107px] h-[43px] rounded-full flex justify-center items-center font-PlayfairDisplay font-bold text-[22px]"
+              className="bg-[white] dark:bg-[#525252] w-[107px] h-[43px] rounded-full flex justify-center items-center font-PlayfairDisplay font-bold text-[22px]"
             >
               {item}
             </div>
