@@ -1,31 +1,34 @@
-/* .openPage{
-    width:100%;
-    height: 985px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:5rem;
-} */
-
-/* .information {
-    width: 1476px;
-    height: 658px;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .information-text{
-    width: 905px;
-    height: 408px;
-} */
-/* 
-.information-git{
-    width: 720px;
-    height: 164px;
-} */
-
-/* .information-image{
-    width: 450px;
-    height: 450px;
-} */
+/* Small screens */
+@media (max-width: 639px) {
+    .openPage {
+      padding: 20px;
+      font-size: 20px; 
+    }
+    .content {
+      flex-direction: column; 
+    }
+    
+   
+  }
+ 
+  @media (min-width: 640px) and (max-width: 767px) {
+    
+  }
+  
+ 
+  @media (min-width: 768px) {
+   
+  }
+  @media (max-width: 639px) {
+    .openPage {
+      padding: 20px;
+    }
+    .content {
+      flex-direction: column;
+    }
+    .information-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  

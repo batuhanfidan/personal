@@ -6,22 +6,22 @@ export default function Footer() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="w-[100%] h-[600px] flex justify-center items-center dark: dark:bg-[#484148] z-[-1]">
-        <div className="w-[1010px] h-[183px] flex justify-between items-center">
-          <div className="w-[700px] font-medium font-Inter text-[56px] text-right z-[2]">
+      <div className="w-full h-[600px] flex justify-center items-center dark:bg-[#484148] z-[-1]">
+        <div className="w-full max-w-[1010px] h-auto lg:h-[183px] flex flex-col lg:flex-row justify-between items-center px-4 lg:px-0">
+          <div className="w-full lg:w-[700px] font-medium font-Inter text-[32px] lg:text-[56px] text-center lg:text-right z-[2] mb-6 lg:mb-0">
             {language === "english"
               ? "Let's work together on your next product."
               : "Bir sonraki projenizde beraber çalışalım."}
           </div>
-          <div className="w-[210px] font-Inter text-[32px] font-medium flex flex-col">
+          <div className="w-full lg:w-[210px] font-Inter text-[24px] lg:text-[32px] font-medium flex flex-col items-center lg:items-start space-y-2 lg:space-y-0 gap-0  z-[2]">
             <a
-              href=" https://github.com/batuhanfidan"
+              href="https://github.com/batuhanfidan"
               target=":blank"
               className="text-[#1769FF] dark:text-[#82BBFF]"
             >
               Github
             </a>
-            <a href="">Personal Blog</a>
+            <a href="#">Personal Blog</a>
             <a
               href="https://www.linkedin.com/in/batuhanfidan07/"
               target=":blank"
@@ -29,7 +29,6 @@ export default function Footer() {
             >
               Linkedin
             </a>
-
             <section>
               <div className="relative inline-block group transition-all">
                 <a href="#" className="text-[#AF0C48] dark:text-[#EA2678]">
@@ -42,7 +41,7 @@ export default function Footer() {
             </section>
           </div>
         </div>
-        <div className="absolute bg-[#82BBFF] w-[367px] h-[24px] mb-9 mr-[100px] rounded-md z-[1]"></div>
+        <div className="absolute bg-[#82BBFF] w-[250px] lg:w-[367px] h-[24px] mb-9 mr-[50px] lg:mr-[100px] rounded-md z-[1] hidden md:block"></div>
       </div>
     </div>
   );

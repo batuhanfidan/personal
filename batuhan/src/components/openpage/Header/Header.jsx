@@ -28,46 +28,52 @@ export default function Header() {
   };
 
   return (
-    <div className="text-[20px] font-bold font-Inter w-[1476px] flex justify-end items-center gap-9">
-      <div className="absolute w-[148px] h-[148px] bg-[#D9D9D9] dark:bg-[#525252] rounded-full left-[570px] -top-[60px]"></div>
-      <div className="flex justify-end items-center gap-4">
-        <label className="switch">
-          <input
-            type="checkbox"
-            checked={!darkMode}
-            onChange={handleDarkModeToggle}
-          />
-          <span className="slider"></span>
-        </label>
-        <p className="text-[#777777] dark:text-[#D9D9D9]">
-          {language === "english"
-            ? darkMode
-              ? "LIGTH  MODE "
-              : "DARK MODE "
-            : darkMode
-            ? "AYDINLIK MOD"
-            : "KARANLIK MOD"}
-        </p>
+    <>
+      <div className="text-[20px] font-bold font-Inter w-[75%] flex justify-end items-center gap-9 header">
+        <div
+          className={`absolute w-[148px] h-[148px] bg-[#D9D9D9] dark:bg-[#525252] rounded-full left-[570px] -top-[60px] CEMBER hidden md:block`}
+        ></div>
+        <div className="flex justify-end items-center gap-4">
+          <label className="switch">
+            <input
+              type="checkbox"
+              checked={!darkMode}
+              onChange={handleDarkModeToggle}
+            />
+            <span className="slider"></span>
+          </label>
+          <p className="text-[#777777] dark:text-[#D9D9D9]">
+            {language === "english"
+              ? darkMode
+                ? "LIGTH  MODE "
+                : "DARK MODE "
+              : darkMode
+              ? "AYDINLIK MOD"
+              : "KARANLIK MOD"}
+          </p>
+        </div>
+        <p className="text-[#777777]">I</p>
+        <div>
+          <button
+            className=" border-[none] bg-transparent text-[#777777]"
+            onClick={() =>
+              handleLanguageChange(
+                language === "turkish" ? "english" : "turkish"
+              )
+            }
+          >
+            {language === "turkish" ? (
+              <>
+                SWITCH TO <span className="text-[#E92577]">ENGLISH </span>{" "}
+              </>
+            ) : (
+              <>
+                <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ{" "}
+              </>
+            )}
+          </button>
+        </div>
       </div>
-      <p className="text-[#777777]">I</p>
-      <div>
-        <button
-          className=" border-[none] bg-transparent text-[#777777]"
-          onClick={() =>
-            handleLanguageChange(language === "turkish" ? "english" : "turkish")
-          }
-        >
-          {language === "turkish" ? (
-            <>
-              SWITCH TO <span className="text-[#E92577]">ENGLISH </span>{" "}
-            </>
-          ) : (
-            <>
-              <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ{" "}
-            </>
-          )}
-        </button>
-      </div>
-    </div>
+    </>
   );
 }

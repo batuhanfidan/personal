@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+
+    .project{
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .card {
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+      padding-top: 0;
+    }
+  
+    .card p {
+      font-size: 28px;
+    }
+  
+    .card .font-Inter {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    .card .font-semibold {
+      font-size: 20px;
+    }
+  
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      padding: 20px;
+    }
+  
+    .card p {
+      font-size: 24px;
+    }
+  
+    .card .font-Inter {
+      font-size: 16px;
+    }
+  
+    .card .font-semibold {
+      font-size: 18px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+
+    
