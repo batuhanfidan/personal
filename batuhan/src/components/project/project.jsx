@@ -27,9 +27,11 @@ export default function Project({ item }) {
           </p>
           <Frames libraries={[library]} />
           <div className="font-semibold text-[20px] md:text-[26px] flex justify-between">
-            <p>{item.view}</p>
+            <a href={link} target=":blank">
+              {item.view}
+            </a>
             <a
-              href={link}
+              href={item.vercel}
               className="font-semibold text-[20px] md:text-[26px] pr-[10px] md:pr-[50px]"
               target=":blank"
             >
