@@ -2,7 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+  .icons {
+    @apply w-[35px] md:w-[45px] h-[38px] md:h-[48px] text-black dark:text-[#D9D9D9] ;
+  }
+  .uı {
+    @apply text-[#AF0C48];
+  }
+  .esnek {
+    @apply flex flex-col
+  }
+  .freelance {
+    @apply text-[18px] md:text-s w-full md:w-[850px]
+  }
+}
 
 body {
   margin: 0;

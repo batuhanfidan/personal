@@ -5,14 +5,14 @@ import "./project.css";
 export default function Project({ item }) {
   const library = Object.values(item.used);
   const link = item.link;
-  const language = useSelector((state) => state.language);
   const darkMode = useSelector((state) => state.darkMode);
+  console.log(item);
 
   return (
     <div>
       <div>
         <div
-          className="w-full max-w-[666px] h-[650px] md:h-[890px] rounded-2xl flex flex-col gap-8 p-[20px] md:pl-[50px] md:pt-[50px] card"
+          className="esnek w-full max-w-[666px] h-[650px] md:h-[890px] rounded-2xl  gap-8 p-[20px] md:pl-[50px] md:pt-[50px] card"
           style={
             darkMode
               ? { backgroundColor: item.darkBackground }
@@ -27,13 +27,13 @@ export default function Project({ item }) {
           </p>
           <Frames libraries={[library]} />
           <div className="font-semibold text-[20px] md:text-[26px] flex justify-between">
-            <p>View on Github</p>
+            <p>{item.view}</p>
             <a
               href={link}
               className="font-semibold text-[20px] md:text-[26px] pr-[10px] md:pr-[50px]"
               target=":blank"
             >
-              Go to app -{">"}
+              {item.go} -{">"}
             </a>
           </div>
         </div>

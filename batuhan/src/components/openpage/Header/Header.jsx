@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 
 import "./Header.css";
 import {
@@ -12,18 +13,37 @@ export default function Header() {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language);
   const darkMode = useSelector((state) => state.darkMode);
-
+  const darkToast = () =>
+    toast.info(
+      language == "turkish" ? "Mod değiştirildi!" : "Mod has changed!",
+      {
+        theme: darkMode ? "light" : "dark",
+        autoClose: 1000,
+      }
+    );
+  const langToast = () => {
+    toast.info(
+      language === "english" ? "Türkçe'ye geçildi" : "Switched to English",
+      {
+        theme: darkMode ? "dark" : "light",
+        autoClose: 1000,
+      }
+    );
+  };
   const handleLanguageChange = (lang) => {
     if (lang === "turkish") {
       dispatch(setTurkish());
       dispatch(getDatas());
+      langToast();
     } else {
       dispatch(setEnglish());
       dispatch(getDatas());
+      langToast();
     }
   };
 
   const handleDarkModeToggle = () => {
+    darkToast();
     dispatch(toggleDarkMode());
   };
 
@@ -31,7 +51,7 @@ export default function Header() {
     <>
       <div className="text-[20px] font-bold font-Inter w-[75%] flex justify-end items-center gap-9 header">
         <div
-          className={`absolute w-[148px] h-[148px] bg-[#D9D9D9] dark:bg-[#525252] rounded-full left-[570px] -top-[60px] CEMBER hidden md:block`}
+          className={`absolute w-[148px] h-[148px] bg-hex dark:bg-grimsi rounded-full left-[570px] -top-[60px] CEMBER hidden md:block`}
         ></div>
         <div className="flex justify-end items-center gap-4">
           <label className="switch">
@@ -42,7 +62,7 @@ export default function Header() {
             />
             <span className="slider"></span>
           </label>
-          <p className="text-[#777777] dark:text-[#D9D9D9]">
+          <p className="text-gri dark:text-hex">
             {language === "english"
               ? darkMode
                 ? "LIGTH  MODE "
@@ -52,10 +72,10 @@ export default function Header() {
               : "KARANLIK MOD"}
           </p>
         </div>
-        <p className="text-[#777777]">I</p>
+        <p className="text-gri">I</p>
         <div>
           <button
-            className=" border-[none] bg-transparent text-[#777777]"
+            className=" border-[none] bg-transparent text-gri"
             onClick={() =>
               handleLanguageChange(
                 language === "turkish" ? "english" : "turkish"
@@ -64,11 +84,11 @@ export default function Header() {
           >
             {language === "turkish" ? (
               <>
-                SWITCH TO <span className="text-[#E92577]">ENGLISH </span>{" "}
+                SWITCH TO <span className="text-pembemsi">ENGLISH </span>{" "}
               </>
             ) : (
               <>
-                <span className="text-[#E92577]">TÜRKÇE</span>'YE GEÇ{" "}
+                <span className="text-pembemsi">TÜRKÇE</span>'YE GEÇ{" "}
               </>
             )}
           </button>

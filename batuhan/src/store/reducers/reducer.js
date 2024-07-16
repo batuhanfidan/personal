@@ -3,6 +3,7 @@ import {
   TURKISH,
   TOGGLE_DARK_MODE,
   GET_DATA,
+  SET_LOADING,
 } from "../actions/action";
 
 const initialLanguage = localStorage.getItem("language") || "english";
@@ -11,25 +12,11 @@ const initialDarkMode = localStorage.getItem("darkMode") === "true" || false;
 const initialState = {
   language: initialLanguage,
   darkMode: initialDarkMode,
-  get_data: [],
+  get_data: null,
 };
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case TURKISH:
-      return {
-        ...state,
-        language: "turkish",
-        get_data: state.get_data,
-      };
-    case ENGLISH:
-      return {
-        ...state,
-        language: "english",
-        get_data: state.get_data,
-      };
-    case TOGGLE_DARK_MODE:
-      return { ...state, darkMode: !state.darkMode };
     case GET_DATA:
       return {
         ...state,
@@ -40,6 +27,19 @@ export const reducer = (state = initialState, action) => {
               : action.payload[0].turkish
             : [],
       };
+    case TURKISH:
+      return {
+        ...state,
+        language: "turkish",
+      };
+    case ENGLISH:
+      return {
+        ...state,
+        language: "english",
+      };
+    case TOGGLE_DARK_MODE:
+      return { ...state, darkMode: !state.darkMode };
+
     default:
       return state;
   }
