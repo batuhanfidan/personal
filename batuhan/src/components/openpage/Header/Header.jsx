@@ -15,7 +15,7 @@ export default function Header() {
   const darkMode = useSelector((state) => state.darkMode);
   const darkToast = () =>
     toast.info(
-      language == "turkish" ? "Mod değiştirildi!" : "Mod has changed!",
+      language == "turkish" ? "Tema değiştirildi!" : "Theme has changed!",
       {
         theme: darkMode ? "light" : "dark",
         autoClose: 1000,
@@ -65,11 +65,11 @@ export default function Header() {
           <p className="text-gri dark:text-hex">
             {language === "english"
               ? darkMode
-                ? "LIGTH  MODE "
-                : "DARK MODE "
+                ? "DARK MODE "
+                : "LIGTH MODE "
               : darkMode
-              ? "AYDINLIK MOD"
-              : "KARANLIK MOD"}
+              ? "KARANLIK MOD"
+              : "AYDINLIK MOD"}
           </p>
         </div>
         <p className="text-gri">I</p>
@@ -84,11 +84,11 @@ export default function Header() {
           >
             {language === "turkish" ? (
               <>
-                SWITCH TO <span className="text-pembemsi">ENGLISH </span>{" "}
+                SWITCH TO <span className="text-purple-800">ENGLISH </span>{" "}
               </>
             ) : (
               <>
-                <span className="text-pembemsi">TÜRKÇE</span>'YE GEÇ{" "}
+                <span className="text-purple-800">TÜRKÇE</span>'YE GEÇ{" "}
               </>
             )}
           </button>

@@ -18,7 +18,7 @@ export default function Profile() {
         <div className="esnek items-center md:flex-row gap-6 md:gap-20 ">
           <div className="esnek shadow w-full md:w-[677.23px] h-auto md:h-[429px] rounded-2xl bg-white dark:bg-grimsi font-Inter gap-4 md:gap-8 p-6 md:pl-[50px] md:pt-[40px] z-[2]">
             <div>
-              <p className="text-pembe text-s md:text-[32px] font-PlayfairDisplay">
+              <p className="text-blue-300 text-s md:text-[32px] font-PlayfairDisplay">
                 {basic.info}
               </p>
             </div>
@@ -44,16 +44,11 @@ export default function Profile() {
               <div className="font-PlayfairDisplay text-s md:text-[32px] z-[2]">
                 {aboutMe.text}
               </div>
-              <div className="absolute w-[120px] h-[24px] rounded-md bg-[#82BBFF] -mt-[150px] md:-mt-[230px] -ml-[15px] z-[1]"></div>
+              <div className="absolute w-[120px] h-[24px] rounded-md bg-[#82BBFF] -mt-[150px] md:-mt-[270px] -ml-[5px] z-[1]"></div>
               <div>{aboutMe.aboutme}</div>
               <div>{aboutMe.aboutme2}</div>
             </div>
           </div>
-          <img
-            src="https://i.hizliresim.com/inugpxj.png"
-            className="absolute right-0 mb-[-300px] md:mb-[-600px] w-24 md:w-auto"
-            alt="Profile Decoration"
-          />
         </div>
       </div>
     </div>

@@ -6,6 +6,10 @@ export default function Footer() {
 
   return (
     <div>
+      <div className="font-light font-Inter text-[20px] lg:text-[30px] text-center z-[-1] mt-[80px] lg:mb-0">
+        Back-end projelerim dahil bütün projelerime GitHub linkim üzerinden
+        ulaşabilirsiniz.
+      </div>
       <div className="w-full h-[600px] flex justify-center items-center dark:bg-[#484148] z-[-1]">
         <div className="esnek w-full max-w-[1010px] h-auto lg:h-[183px] lg:flex-row justify-between items-center px-4 lg:px-0 ">
           <div className="w-full lg:w-[700px] font-medium font-Inter text-[32px] lg:text-[56px] text-center lg:text-right z-[2] mb-6 lg:mb-0">
@@ -17,7 +21,7 @@ export default function Footer() {
               target=":blank"
               className="text-[#1769FF] dark:text-[#82BBFF]"
             >
-              Github
+              GitHub
             </a>
             <a href="#">Personal Blog</a>
             <a

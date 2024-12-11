@@ -55,14 +55,14 @@ export default function OpenPage() {
                   style={{ display: language === "turkish" ? "none" : "" }}
                 >
                   Currently <span className="uı">Freelancing </span> for
-                  <span className="uı">UX, UI, & Web Design </span> Project.
+                  <span className="uı"> UX, UI, & Web Design </span> Project.
                   <br />
                   Invite me to join your team -{">"}
                   <span className="uı"> batuhanfidan07@hotmail.com</span>
                 </p>
               </div>
               <div className="w-full">
-                <div className="w-[140px] h-[78px] bg-pembe absolute rounded-l-full top-[710px] right-0 z-[9] hidden md:block"></div>
+                <div className="w-[140px] h-[78px] bg-purple-800 absolute rounded-l-full top-[710px] right-0 z-[9] hidden md:block"></div>
               </div>
             </div>
 
@@ -72,8 +72,8 @@ export default function OpenPage() {
               alt="Profile"
             />
           </div>
-          <div className="w-[150px] md:w-[200px] h-[32px] md:h-[42px] bg-pembemsi rounded-md absolute z-[1] top-[350px] left-[170px] hidden md:block"></div>
-          <div className="w-[350px] md:w-[450px] h-[350px] md:h-[450px] bg-pembemsi rounded-3xl absolute ml-[970px] -mt-[40px] z-[1] hidden md:block"></div>
+          <div className="w-[150px] md:w-[200px] h-[32px] md:h-[42px] bg-purple-800 rounded-md absolute z-[1] top-[320px] left-[190px] hidden md:block"></div>
+          <div className="w-[350px] md:w-[450px] h-[350px] md:h-[450px] bg-purple-800 rounded-3xl absolute ml-[970px] -mt-[40px] z-[1] hidden md:block"></div>
           <div className="w-[100px] md:w-[140px] h-[100px] md:h-[140px] rounded-full bg-[#d9d9d900] dark:border-grimsi border-[21px] absolute right-[350px] top-[915px] hidden md:block"></div>
         </div>
       </div>
