@@ -8,11 +8,11 @@ export default function Skills() {
 
   return (
     <div>
-      <div className="esnek items-center justify-center h-[656px] w-full  font-Inter gap-20 bg-white dark:bg-[#484148] md:gap-10 lg:gap-20">
+      <div className="esnek items-center justify-center h-[750px] w-full  font-Inter gap-20 bg-white dark:bg-[#484148] md:gap-10 lg:gap-20">
         <div className="text-[32px] md:text-[48px] lg:text-[64px] font-medium dark:text-whitelightest">
           {text.skills}
         </div>
-        <div className="flex justify-center flex-wrap gap-6 md:gap-10 lg:gap-12">
+        <div className="flex justify-center flex-wrap gap-6 md:gap-10 lg:gap-12 w-9/12">
           {skillTwo.map((skill, index) => (
             <div
               className="esnek items-center gap-2 md:gap-4 lg:gap-6"
