@@ -32,7 +32,7 @@ export default function Footer() {
                 <a href="#" className="text-[#AF0C48] dark:text-pembe">
                   Email
                 </a>
-                <span className="absolute left-full top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 duration-700 text-sm">
+                <span className="absolute left-1/2 transform -translate-x-1/2 top-full opacity-0 group-hover:opacity-100 translate-y-[-100%] group-hover:translate-y-0 transition-all duration-500 text-sm">
                   {footer.email}
                 </span>
               </div>
